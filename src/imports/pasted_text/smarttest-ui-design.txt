@@ -1,0 +1,160 @@
+Goal: Generate a high-fidelity, unique, and professional UI design system and all necessary screen interfaces for a comprehensive software testing platform named SmartTest, in Figma. The design must be modern, functional, and support two distinct user roles: User and Admin, with full Light and Dark theme capabilities.
+
+Phase 1: Branding and System Fundamentals
+
+Subject: SmartTest UI Design System
+Style: Minimalist, high-tech, data-focused, intuitive (similar to a modern SaaS dashboard). Use clean lines, subtle gradients, and clear typography.
+Color Palette: Use a primary brand color (e.g., a vibrant blue or teal) with a range of neutrals. The Dark Theme should use deep grays/charcoals with bright, high-contrast text and interactive elements.
+Core Principle: A single sign-on experience that splits the user journey based on their defined role.
+
+Phase 2: Interface Generation (screen-by-screen)
+
+Generate these distinct screen mockups within Figma, ensuring a cohesive navigation flow.
+
+Part 1: Unified Access & Routing
+
+Screen 1: Unified Login/Sign-Up Page
+
+Prompt: A modern, clean portal page.
+
+Header: Large "SmartTest" logo.
+
+Forms: An elegant login/sign-up form with input fields for Email, Password. A prominent button labeled "Sign In / Sign Up".
+
+Unique Feature: Directly below the main action button, create a subtle, elegant toggle component with two clearly defined options: "I am a [User]" and "I am an [Admin]". Add text that says "By signing in, I agree to the [Terms & Conditions] and have selected my role:". This must be clearly selectable and visually prominent. Add the Dark/Light theme toggle here.
+
+Part 2: User Role Interface Flow
+
+Common User Element: A persistent vertical navigation sidebar on the left. The top of the sidebar shows the "SmartTest" logo and a compact profile picture. The main menu items are listed. The profile/settings section is at the bottom.
+
+Screen 2: User Dashboard (image_0.png reference)
+
+Prompt: Main User Dashboard.
+
+Layout: A large, inviting center panel.
+
+Elements: A welcoming header "Welcome, [User Name]!".
+
+Project Overview Card: A summary card showing recent activity: "Total Projects", "Last Test Result", "Available Testing Credit".
+
+Recent Activity Feed: A list of recent file uploads and their statuses.
+
+Main Action: A large, prominent "Upload New Project" button.
+
+Screen 3: Upload Project & Select Tests (New Feature Flow)
+
+Prompt: The multi-step core testing wizard.
+
+Header: "Project Upload & Setup".
+
+File Drop Zone: A large, interactive area for drag-and-drop file/folder upload (or browse button).
+
+Dynamic Response Panel (Step 2): Below the upload, a panel with a loading animation. Text updates: "File structure analysis in progress...". After analysis, display a list of detected extensions/tools: "[Detected: Python, JSON, React, Jest, ESLint]".
+
+Test Selection Panel (Step 3): A structured list of suggested testing tools/extensions available specifically for the detected files, each with a checkbox (e.g., [x] Python Linting, [x] Jest Unit Tests, [ ] Code Coverage). A description text area explains what each test does.
+
+Feature Toggles (New Feature Flow): A section with two distinct toggle switches, clearly explained:
+
+Toggle 1: Live Error Reporting (Active by default): "Receive and view errors in real-time as tests run."
+
+Toggle 2: Pause on Error: "Stop the testing sequence after each error found to review. Testing only continues upon manual command."
+
+Main Action: A large button labeled "Start Testing".
+
+Screen 4: Test Runs & Live Monitor (New Feature Flow)
+
+Prompt: Dynamic, real-time testing console.
+
+Layout: Split screen or tabbed view.
+
+Left Panel (The Process): A real-time updating status feed of the entire test run, tool by tool.
+
+Right Panel (live errors/cases):
+
+Error Feed (top): A scrollable area listing all errors found in real-time, color-coded by severity (red for failure).
+
+Test Cases (bottom): Dynamic counters updating on-the-fly: "Test Cases Passed: [Count]", "Test Cases Failed: [Count]". A visual bar chart fills dynamically.
+
+Interactivity for "Pause on Error" Toggle: When Toggle 2 (Pause on Error) is ON, the screen must change upon an error. The error is highlighted, and a special, unique central dialog box appears. Text: "ERROR DETECTED: [Error Detail]". Action Buttons: "[View Error Code]", "[Fix Later and Skip]", "[Continue Testing]".
+
+Screen 5: Result Page
+
+Prompt: Post-testing summary page.
+
+Header: "Final Test Result for: [Project Name]".
+
+Overall Grade/Score: A large, professional circular chart with an overall pass/fail percentage and grade (e.g., 'B+', 'A').
+
+Detailed Breakdown: A categorized list (Python, JSON, etc.) showing pass/fail stats and key errors.
+
+Actions: "[Download Full Report]", "[Re-run Tests]".
+
+Screen 6: Report Section
+
+Prompt: A history of all previous tests.
+
+Layout: An interactive table view.
+
+Columns: Date, Project Name, Overall Result (pass/fail icon), No. of Tests, Error Count, Download Link.
+
+Filters: Calendar selector and text search.
+
+Screen 7: User Settings & Profile (image_0.png reference)
+
+Prompt: Combined page or separate tabs. Profile shows basic account info and usage statistics. Settings includes API keys, notification preferences, and the Master Theme Toggle.
+
+Part 3: Admin Role Interface Flow
+
+Common Admin Element: A persistent vertical navigation sidebar, distinct from the User sidebar, with Admin-specific menu items.
+
+Screen 8: Admin Dashboard (image_0.png reference)
+
+Prompt: High-level platform overview for admins.
+
+Header: "SmartTest Admin Center".
+
+Performance Cards: Key aggregate data cards: "Total Active Users", "Total Files Tested (Last 30 Days)", "Overall Pass Rate", "Overall Fail Rate".
+
+Alerts Section: Recent critical errors or system messages.
+
+Screen 9: Users Management (image_0.png reference)
+
+Prompt: Detailed user list and control.
+
+Layout: A large interactive table.
+
+Columns: User ID, Username, Email, Last Test Date, Files Tested (Count), Account Status.
+
+Actions: Each row must have a prominent "Details" button.
+
+Admin Control: A very unique and clear column titled "[Disable Account]". Each row has a special toggle switch or red "Disable User" button. A modal confirmation dialog appears on click: "Are you sure you want to disable [User Email]? They will lose all access."
+
+Screen 10: User Detail & Activity Log (image_0.png reference)
+
+Prompt: Specific user history page, linked from Screen 9.
+
+Header: "Activity Detail: [User Name]".
+
+Layout: Multi-part page.
+
+Detailed User Info: Sign-up date, current plan, usage limits.
+
+Activity Timeline: A structured vertical timeline showing all actions: File Upload (Date, Filename), Test Run (Tools Used, Result).
+
+Tools & Extensions Used Section: A dedicated area showing which tools (e.g., 'used Pylint 4 times', 'used React DevTools 10 times') this specific user has utilized.
+
+Screen 11: Testing Tools Management (New Feature Flow)
+
+Prompt: Catalog of system capabilities.
+
+Layout: A searchable catalog of cards or list items.
+
+Elements: Filterable list of all tools and extensions supported by SmartTest (e.g., Python Pylint, Jest, ESLint, React Tools).
+
+Details: Each item card must show: "Tool Name", "Supported File Types", "Current Version", "Last Updated".
+
+Action: A special marker (e.g., a green check or status light) showing which tools are currently "[Enabled and Operational]".
+
+Screen 12: Admin Profile & Settings (image_0.png reference)
+
+Prompt: Standard admin management. Profile, Settings, and Master Theme Toggle.
